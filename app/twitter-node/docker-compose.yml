@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  twitter-node:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - TWITTER_API_KEY=${TWITTER_API_KEY}
+      - TWITTER_API_SECRET=${TWITTER_API_SECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_SECRET=${TWITTER_ACCESS_SECRET}
+    volumes:
+      - .:/app
