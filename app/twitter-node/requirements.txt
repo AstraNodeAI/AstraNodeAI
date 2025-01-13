@@ -1,0 +1,9 @@
+flask
+tweepy
+transformers
+nltk
+spacy
+pandas
+schedule
+textblob
+python-dotenv
